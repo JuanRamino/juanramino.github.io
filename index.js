@@ -7,9 +7,7 @@ class NextbitRobin {
   
   request() {
     let options = {
-      "filters": [{
-        "name": "Nextbit Robin"
-      }],
+      "acceptAllDevices": true,
       "optionalServices": [0xFF02]
     };
     return navigator.bluetooth.requestDevice(options)
